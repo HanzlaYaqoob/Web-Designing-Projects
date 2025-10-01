@@ -1,0 +1,16 @@
+Complete video tutorial:
+Build a MERN Stack Resume Builder | React, Node.js, MongoDB, Express | Full-Stack Project (2025) by Hexagon Digital Services
+Link: https://youtu.be/gWHgPP5ay7Q?si=29oaLAFwIBuSeYiG
+
+
+<!------- Git Uploading commands --->
+In your terminal of working directory
+git config --gloabal user.name "Your Name"
+git config --gloabal user.email "Your Email"
+
+git init
+git remote add origin https://github.com/username/repo-name.git
+git add .
+git commit -m "Initial commit"   (or)  git commit "updated commit"
+git branch -M main
+git push -u origin main

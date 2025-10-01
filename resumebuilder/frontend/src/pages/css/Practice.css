@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  --bgColor: #ffffff;
+  --text: #000000;
+}
+
+[data-theme="dark"] {
+  --bgColor: #000000;
+  --text: #ffffff;
+}
+
+/* PracticePage*/
+@layer components {
+  .main {
+    @apply flex justify-between;
+  }
+  .sib1 {
+    @apply h-16 w-16 bg-amber-300 rounded-full;
+  }
+  .sib2 {
+    @apply h-16 w-16 bg-amber-500 rounded-full;
+  }
+  .sib3 {
+    @apply h-16 w-16 bg-amber-800 rounded-full;
+  }
+}
+
+/* LandingPage ctaCard */
+@layer components {
+  .ctaCardBg {
+    @apply absolute -inset-6 sm:-inset-8 bg-gradient-to-r from-violet-200/50 to-fuchsia-200/50 rounded-3xl blur-3xl;
+  }
+}
