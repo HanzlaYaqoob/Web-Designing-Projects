@@ -4,13 +4,19 @@ Link: https://youtu.be/gWHgPP5ay7Q?si=29oaLAFwIBuSeYiG
 
 
 <!------- Git Uploading commands --->
-In your terminal of working directory
+In your terminal of working directory give your identity to Git
 git config --gloabal user.name "Your Name"
 git config --gloabal user.email "Your Email"
 
+
+// uploading process to github
 git init
 git remote add origin https://github.com/username/repo-name.git
 git add .
 git commit -m "Initial commit"   (or)  git commit "updated commit"
 git branch -M main
 git push -u origin main
+
+// if you delete the repository than have to upload same repo
+rm -rf resumebuilder/.git     // Remove its git-tracking, but keep the files
+git rm --cached resumebuilder   // Remove the "embedded repo" entry from parent index
