@@ -17,6 +17,9 @@ git commit -m "Initial commit"   (or)  git commit "updated commit"
 git branch -M main
 git push -u origin main
 
+// if you added some files like readme already to github
+git pull origin main --alow-unrelated-histories           // it will fetch already existing files from repo
+
 // if you delete the repository than have to upload same repo
 rm -rf resumebuilder/.git     // Remove its git-tracking, but keep the files
 git rm --cached resumebuilder   // Remove the "embedded repo" entry from parent index
